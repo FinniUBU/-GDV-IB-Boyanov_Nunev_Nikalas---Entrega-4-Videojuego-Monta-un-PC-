@@ -1,0 +1,36 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "btnInicio",
+					"sid": 581699013104825
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 311272830453848,
+					"parameters": {
+						"variable": "Puntuacion",
+						"value": "0"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 342491020183076,
+					"parameters": {
+						"layout": "Juego"
+					}
+				}
+			],
+			"sid": 246046414389210
+		}
+	],
+	"sid": 561815166239702
+}

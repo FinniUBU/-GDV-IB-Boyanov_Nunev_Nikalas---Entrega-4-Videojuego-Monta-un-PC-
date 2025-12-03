@@ -1,0 +1,839 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Puntuacion",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 668107656692878
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 171216508722640
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaCooler",
+					"sid": 251787414092910,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaCPU",
+					"sid": 782356580693523,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaGPU",
+					"sid": 325523353601681,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaPlaca",
+					"sid": 768041645969040,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaPSU",
+					"sid": 737673383301504,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaRAM",
+					"sid": 960619283607557,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 541851649104491
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 887549742916767,
+					"parameters": {
+						"first-value": "RespuestaCaja.Text",
+						"comparison": 0,
+						"second-value": "\"Caja\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Case",
+					"sid": 241007638240152,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaPlaca",
+					"sid": 934497887814953,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Case",
+					"sid": 877452941930075,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "RespuestaCaja",
+					"sid": 710846378915254,
+					"parameters": {
+						"text": "\"Correcto\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaCaja",
+					"sid": 777484344542260,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 876015850582851
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 682046731293593,
+					"parameters": {
+						"first-value": "RespuestaPlaca.Text",
+						"comparison": 0,
+						"second-value": "\"Placa\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Placa_base",
+					"sid": 370393052352772,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaGPU",
+					"sid": 271826732666250,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Placa_base",
+					"sid": 287447332789523,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "RespuestaPlaca",
+					"sid": 970985081260414,
+					"parameters": {
+						"text": "\"Correcto\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaPlaca",
+					"sid": 190567250554756,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 295755415470968
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 630480584465290,
+					"parameters": {
+						"first-value": "RespuestaGPU.Text",
+						"comparison": 0,
+						"second-value": "\"Grafica\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Grafica",
+					"sid": 121320236585240,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaCPU",
+					"sid": 316504874647394,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Grafica",
+					"sid": 551686074517796,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "RespuestaGPU",
+					"sid": 843811126568751,
+					"parameters": {
+						"text": "\"Correcto\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaGPU",
+					"sid": 973655666425833,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 254425560601920
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 427965454970429,
+					"parameters": {
+						"first-value": "RespuestaCPU.Text",
+						"comparison": 0,
+						"second-value": "\"Procesador\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "cpu",
+					"sid": 134186359334207,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaCooler",
+					"sid": 171353586636282,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cpu",
+					"sid": 117469454595553,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "RespuestaCPU",
+					"sid": 700474640186560,
+					"parameters": {
+						"text": "\"Correcto\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaCPU",
+					"sid": 891171745914504,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 949312933136086
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 782854918983110,
+					"parameters": {
+						"first-value": "RespuestaCooler.Text",
+						"comparison": 0,
+						"second-value": "\"Cooler\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "cpu_cooler",
+					"sid": 429550011084698,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaRAM",
+					"sid": 852960547621988,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cpu_cooler",
+					"sid": 859232790680305,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "RespuestaCooler",
+					"sid": 765111967872177,
+					"parameters": {
+						"text": "\"Correcto\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaCooler",
+					"sid": 242615999911078,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 291446470707996
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 540414978927371,
+					"parameters": {
+						"first-value": "RespuestaRAM.Text",
+						"comparison": 0,
+						"second-value": "\"RAM\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "ram",
+					"sid": 545736428059780,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaPSU",
+					"sid": 874262859523036,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ram",
+					"sid": 512209027787784,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "RespuestaRAM",
+					"sid": 327093770886602,
+					"parameters": {
+						"text": "\"Correcto\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaRAM",
+					"sid": 279375782250787,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 959742062419702
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 134399966172697,
+					"parameters": {
+						"first-value": "RespuestaPSU.Text",
+						"comparison": 0,
+						"second-value": "\"Fuente\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "psu",
+					"sid": 476521862942847,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "psu",
+					"sid": 168352580149255,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "RespuestaPSU",
+					"sid": 625973263202927,
+					"parameters": {
+						"text": "\"Correcto\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "RespuestaPSU",
+					"sid": 570299347848003,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 782433560573219
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Case",
+					"sid": 304836423457626,
+					"parameters": {
+						"object": "TriggerCase"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 338555730210863,
+					"parameters": {
+						"variable": "Puntuacion",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Case",
+					"sid": 180786819035690,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Case",
+					"sid": 417526880494393,
+					"parameters": {
+						"x": "TriggerCase.X",
+						"y": "TriggerCase.Y"
+					}
+				}
+			],
+			"sid": 894736842707463
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "cpu",
+					"sid": 760785357687479,
+					"parameters": {
+						"object": "TriggerCPU"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 657368438049742,
+					"parameters": {
+						"variable": "Puntuacion",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cpu",
+					"sid": 977549033208738,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cpu",
+					"sid": 902760065101910,
+					"parameters": {
+						"x": "TriggerCPU.X",
+						"y": "TriggerCPU.Y"
+					}
+				}
+			],
+			"sid": 360730778162420
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "cpu_cooler",
+					"sid": 815102178058432,
+					"parameters": {
+						"object": "TriggerCooler"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 454069347270590,
+					"parameters": {
+						"variable": "Puntuacion",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cpu_cooler",
+					"sid": 265776740919590,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cpu_cooler",
+					"sid": 331037895990505,
+					"parameters": {
+						"x": "TriggerCooler.X",
+						"y": "TriggerCooler.Y"
+					}
+				}
+			],
+			"sid": 523438763646629
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Grafica",
+					"sid": 482000399906549,
+					"parameters": {
+						"object": "TriggerGPU"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 106457805776681,
+					"parameters": {
+						"variable": "Puntuacion",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Grafica",
+					"sid": 360814668765797,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Grafica",
+					"sid": 393618176840524,
+					"parameters": {
+						"x": "TriggerGPU.X",
+						"y": "TriggerGPU.Y"
+					}
+				}
+			],
+			"sid": 547237128364700
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Placa_base",
+					"sid": 729741202541494,
+					"parameters": {
+						"object": "TriggerPlaca"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 465934269815223,
+					"parameters": {
+						"variable": "Puntuacion",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Placa_base",
+					"sid": 572042828542800,
+					"parameters": {
+						"x": "TriggerPlaca.X",
+						"y": "TriggerPlaca.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Placa_base",
+					"sid": 326355095924078,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 777899080676050
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "psu",
+					"sid": 661262952325579,
+					"parameters": {
+						"object": "TriggerPSU"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 405939866767068,
+					"parameters": {
+						"variable": "Puntuacion",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "psu",
+					"sid": 810347452845352,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "psu",
+					"sid": 109640178137880,
+					"parameters": {
+						"x": "TriggerPSU.X",
+						"y": "TriggerPSU.Y"
+					}
+				}
+			],
+			"sid": 293511836749971
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ram",
+					"sid": 696632075438044,
+					"parameters": {
+						"object": "TriggerRAM"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 790286078162032,
+					"parameters": {
+						"variable": "Puntuacion",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "ram",
+					"sid": 738831441949087,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "ram",
+					"sid": 292900742134522,
+					"parameters": {
+						"x": "TriggerRAM.X",
+						"y": "TriggerRAM.Y"
+					}
+				}
+			],
+			"sid": 333736853354003
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 112923968778385,
+					"parameters": {
+						"first-value": "Puntuacion",
+						"comparison": 0,
+						"second-value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 986732227180814,
+					"parameters": {
+						"seconds": "2.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 393963285943236,
+					"parameters": {
+						"layout": "Final"
+					}
+				}
+			],
+			"sid": 938231582614111
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 243579079435777
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "txtPuntuacion",
+					"sid": 185838851628501,
+					"parameters": {
+						"text": "Puntuacion"
+					}
+				}
+			],
+			"sid": 768106845253984
+		}
+	],
+	"sid": 692617829067934
+}

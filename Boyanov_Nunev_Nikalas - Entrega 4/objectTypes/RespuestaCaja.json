@@ -1,0 +1,9 @@
+{
+	"name": "RespuestaCaja",
+	"plugin-id": "TextBox",
+	"sid": 435682849782055,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

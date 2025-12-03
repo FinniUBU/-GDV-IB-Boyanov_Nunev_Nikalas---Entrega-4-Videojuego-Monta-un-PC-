@@ -1,0 +1,10 @@
+{
+	"name": "txtPuntuacion",
+	"plugin-id": "Text",
+	"sid": 496574747207107,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

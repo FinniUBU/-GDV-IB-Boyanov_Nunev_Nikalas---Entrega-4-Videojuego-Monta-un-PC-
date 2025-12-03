@@ -1,0 +1,9 @@
+{
+	"name": "RespuestaGPU",
+	"plugin-id": "TextBox",
+	"sid": 369382049258341,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}
