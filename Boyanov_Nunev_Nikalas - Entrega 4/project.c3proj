@@ -97,7 +97,8 @@
 			"Text2",
 			"btnInicio",
 			"txtPuntuacion",
-			"TiledBackground4"
+			"TiledBackground4",
+			"EntradaDeTexto"
 		],
 		"subfolders": []
 	},
