@@ -98,7 +98,8 @@
 			"btnInicio",
 			"txtPuntuacion",
 			"TiledBackground4",
-			"EntradaDeTexto"
+			"EntradaDeTexto",
+			"Sprite"
 		],
 		"subfolders": []
 	},
